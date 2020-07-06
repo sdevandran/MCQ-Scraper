@@ -1,10 +1,10 @@
 # MCQ-Scraper
 ### About ###
-Scrape and print MCQs with Answers from 
+Scrape and print MCQs with Chapter, Title, Questions and Answers from 
 [Pinoybix](https://pinoybix.org/)
 
 ### How to use ? ###
-* Set Chapter number in `MCQ Scraper.py` file
+* Set Maximum Chapter number in `MCQ Scraper.py` file
 ```
 chapters = 32
 ```
@@ -12,6 +12,6 @@ chapters = 32
 ```
 py MCQ Scraper.py
 ```
-* After execution it will start printing the MCQs with Answers
+* After execution it will start printing the output
 
 (check the above `Complete Practice Quiz in Data Communications and Networking.txt`)
