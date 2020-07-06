@@ -1,13 +1,13 @@
 import requests
 import re
 from bs4 import BeautifulSoup
-c = 32
+chapters = 32
 # https://pinoybix.org/2015/10/practice-quiz-in-data-communications-and-networking.html
 response = requests.get(
     'https://pinoybix.org/2020/02/quiz-in-data-communications-and-networking-ece-board-exam.html')
 a = response.text
 z = re.findall('<div style="border-top: #ffd324 1px solid; border-right: #ffd324 1px solid; background: #fff6bf; border-bottom: #ffd324 1px solid; padding-bottom: 10px; padding-top: 10px; padding-left: 10px; margin: 10px 0px; border-left: #ffd324 1px solid; padding-right: 10px" align="justify">&#160;<strong>(.*)</strong></div>', a)
-z = z[:c]
+z = z[:chapters]
 a = z
 for z, i in enumerate(a):
     print(f'Chapter {z + 1}')
